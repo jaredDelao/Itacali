@@ -16,7 +16,16 @@
             <h4>OUR MENU</h4>
             <div class="line"></div>
           </div>
-          <img class="img-slide" :src="img.path" :alt="img.name" />
+          <img
+            class="no-responsive img-slide"
+            :src="img.path"
+            :alt="img.name"
+          />
+          <img
+            class="img-slide responsive"
+            :src="img.pathResponsive"
+            :alt="img.name"
+          />
         </div>
       </swiper-slide>
     </swiper>
@@ -34,23 +43,38 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 // images
-import imgTacos from "../assets/menu-slider/Menu_Tacos.jpg";
-import imgBarbacoa from "../assets/menu-slider/Menu_Barbacoa.jpg";
-import imgBowls from "../assets/menu-slider/Menu_Bowls.jpg";
-import imgBurritos from "../assets/menu-slider/Menu_Burritos.jpg";
-import imgDesserts from "../assets/menu-slider/Menu_Desserts.jpg";
-import imgTamales from "../assets/menu-slider/Menu_Tamales.jpg";
+import imgTacos from "../assets/menu-slider/768/Menu_Itacalli_768_Tacos.jpg";
+import imgTacosResponsive from "../assets/menu-slider/576/Menu_Itacalli_576_Tacos.jpg";
+
+import imgBarbacoa from "../assets/menu-slider/768/Menu_Itacalli_768_Barbacoa.jpg";
+import imgBarbacoaResponsive from "../assets/menu-slider/576/Menu_Itacalli_576_Barbacoa.jpg";
+
+import imgBowls from "../assets/menu-slider/768/Menu_Itacalli_768_Bowls.jpg";
+import imgBowlsResponsive from "../assets/menu-slider/576/Menu_Itacalli_576_Bowls.jpg";
+
+import imgBurritos from "../assets/menu-slider/768/Menu_Itacalli_768_Burritos.jpg";
+import imgBurritosRes from "../assets/menu-slider/576/Menu_Itacalli_576_Burritos.jpg";
+
+import imgDesserts from "../assets/menu-slider/768/Menu_Itacalli_768_Desserts.jpg";
+import imgDessertsRes from "../assets/menu-slider/576/Menu_Itacalli_576_Desserts.jpg";
+
+import imgTamales from "../assets/menu-slider/768/Menu_Itacalli_768_Tamales.jpg";
+import imgTamalesRes from "../assets/menu-slider/576/Menu_Itacalli_576_Tamales.jpg";
 export default {
   name: "PhilosophyView",
   data: () => {
     return {
       imgCarrusel: [
-        { name: "Tacos", path: imgTacos },
-        { name: "Barbacoa", path: imgBarbacoa },
-        { name: "Bowls", path: imgBowls },
-        { name: "Burritos", path: imgBurritos },
-        { name: "Desserts", path: imgDesserts },
-        { name: "Tamales", path: imgTamales },
+        { name: "Tacos", path: imgTacos, pathResponsive: imgTacosResponsive },
+        {
+          name: "Barbacoa",
+          path: imgBarbacoa,
+          pathResponsive: imgBarbacoaResponsive,
+        },
+        { name: "Bowls", path: imgBowls, pathResponsive: imgBowlsResponsive },
+        { name: "Burritos", path: imgBurritos, pathResponsive: imgBurritosRes },
+        { name: "Desserts", path: imgDesserts, pathResponsive: imgDessertsRes },
+        { name: "Tamales", path: imgTamales, pathResponsive: imgTamalesRes },
       ],
     };
   },
@@ -103,6 +127,17 @@ export default {
         height: 100%;
         object-fit: contain;
         background-color: #f24a51;
+      }
+      .responsive {
+        display: none;
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
+      }
+      .no-responsive {
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }

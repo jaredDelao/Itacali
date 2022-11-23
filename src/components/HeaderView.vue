@@ -1,7 +1,19 @@
 <template>
   <div class="header">
-    <img class="background" src="../assets/Header.jpg" alt="Itacalli fondo" />
-    <img class="logo" src="../assets/logo.svg" alt="Itacalli" />
+    <img
+      class="background"
+      srcset="
+        ../assets/header/portada_992.jpg 992w,
+        ../assets/header/portada_768.jpg 768w,
+        ../assets/header/portada_576.jpg 576w
+      "
+      sizes="(max-width: 992px) 992px,
+            (max-width: 768px) 768px,
+            (max-width: 576px) 576px"
+      src="../assets/header/portada_1200.jpg"
+      alt="Itacalli fondo"
+    />
+    <!-- <img class="logo" src="../assets/logo.svg" alt="Itacalli" /> -->
     <h4>MEXICAN FOOD IN YOUR HOME</h4>
   </div>
 </template>
@@ -16,10 +28,11 @@ export default {
   position: relative;
   width: 100%;
   height: 95vh;
+  overflow: hidden;
   .background {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .logo {
     position: absolute;
