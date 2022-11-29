@@ -16,7 +16,10 @@
       alt="Itacalli fondo"
     />
     <!-- <img class="logo" src="../assets/logo.svg" alt="Itacalli" /> -->
-    <h4>MEXICAN FOOD IN YOUR HOME</h4>
+    <h4>
+      MEXICAN FOOD <br class="break-responsive" />
+      IN YOUR HOME
+    </h4>
   </div>
 </template>
 
@@ -31,6 +34,12 @@ export default {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  .break-responsive {
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  }
   .no-responsive {
     @media screen and (max-width: 768px) {
       display: none;
@@ -74,7 +83,7 @@ export default {
     font-size: 5em;
     font-weight: 500;
     left: 50%;
-    top: 90%;
+    top: 88%;
     font-family: "Balboa", Arial;
     transform: translate(-50%, -50%);
     @media screen and (max-width: 992px) {

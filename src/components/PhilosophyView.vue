@@ -2,7 +2,7 @@
   <div class="philosophy">
     <div class="container">
       <div class="text">
-        <h2>Filosofía</h2>
+        <h2>Our Seasoning</h2>
         <h4>
           Itacali <br />
           The flavor of our land. We offer a variety of home cooking, prepared
