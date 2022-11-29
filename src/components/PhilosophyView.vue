@@ -4,10 +4,11 @@
       <div class="text">
         <h2>Filosofía</h2>
         <h4>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. A totam
-          maxime nostrum voluptatum sit aliquid ut laboriosam commodi voluptate
-          corporis dolorem ex temporibus eligendi, obcaecati fugit laborum
-          similique. Mollitia, dolorem?
+          Itacali <br />
+          The flavor of our land. We offer a variety of home cooking, prepared
+          with fresh, natural products and with the seasoning that grandma had;
+          we prepare dishes that recall our roots, that taste of love and
+          nostalgia.
         </h4>
       </div>
       <img src="../assets/philosophy.png" alt="philosophy" />

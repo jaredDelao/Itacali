@@ -10,13 +10,25 @@
     </div>
     <div class="delivery__apps">
       <div class="cards">
-        <img src="../assets/Grubhub.png" alt="Grubhub" />
-        <img src="../assets/Doordash.png" alt="Doordash" />
-        <img src="../assets/UberEats.png" alt="Uber Eats" />
+        <a
+          target="_blank"
+          href="https://www.grubhub.com/restaurant/itacali---deliciously-mexican-2353-e-12st-oakland/4845048"
+          ><img src="../assets/Grubhub.png" alt="Grubhub"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.doordash.com/store/itacali---deliciously-mexican-oakland-24209597/?cursor=eyJzdG9yZV92ZXJ0aWNhbF9pZCI6bnVsbCwic2VhcmNoX2l0ZW1fY2Fyb3VzZWxfY3Vyc29yIjp7InF1ZXJ5IjoiaXRhY2FsaSIsIml0ZW1faWRzIjpbXSwic2VhcmNoX3Rlcm0iOiJpdGEgY2FsaSIsInZlcnRpY2FsX2lkIjotOTksInZlcnRpY2FsX25hbWUiOiIifSwiaXNfc2libGluZyI6ZmFsc2UsImZvcmNlX3N0b3JlX2F2YWlsYWJpbGl0eV92MiI6ZmFsc2V9&pickup=false"
+          ><img src="../assets/Doordash.png" alt="Doordash"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.ubereats.com/store/itacali-deliciously-mexican/QyKPNrDvV2eQPgrk3Dck8w?diningMode=DELIVERY"
+          ><img src="../assets/UberEats.png" alt="Uber Eats"
+        /></a>
       </div>
     </div>
     <div class="delivery__btn-order">
-      <button type="button">Order Now and Pick Up</button>
+      <button type="button">Order Here</button>
     </div>
 
     <div class="delivery__contact">

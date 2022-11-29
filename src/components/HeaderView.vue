@@ -1,16 +1,18 @@
 <template>
   <div class="header">
     <img
-      class="background"
-      srcset="
-        ../assets/header/portada_992.jpg 992w,
-        ../assets/header/portada_768.jpg 768w,
-        ../assets/header/portada_576.jpg 576w
-      "
-      sizes="(max-width: 992px) 992px,
-            (max-width: 768px) 768px,
-            (max-width: 576px) 576px"
+      class="background no-responsive"
       src="../assets/header/portada_1200.jpg"
+      alt="Itacalli fondo"
+    />
+    <img
+      class="background responsive"
+      src="../assets/header/portada_768.jpg"
+      alt="Itacalli fondo"
+    />
+    <img
+      class="background responsive-sm"
+      src="../assets/header/portada_responsive.jpeg"
       alt="Itacalli fondo"
     />
     <!-- <img class="logo" src="../assets/logo.svg" alt="Itacalli" /> -->
@@ -27,12 +29,29 @@ export default {
 .header {
   position: relative;
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   overflow: hidden;
+  .no-responsive {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .responsive {
+    display: none;
+    @media (min-width: 577px) and (max-width: 768px) {
+      display: block;
+    }
+  }
+  .responsive-sm {
+    display: none;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
+  }
   .background {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
   .logo {
     position: absolute;
@@ -55,7 +74,7 @@ export default {
     font-size: 5em;
     font-weight: 500;
     left: 50%;
-    top: 83%;
+    top: 90%;
     font-family: "Balboa", Arial;
     transform: translate(-50%, -50%);
     @media screen and (max-width: 992px) {
