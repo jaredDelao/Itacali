@@ -9,6 +9,10 @@
         bulletActiveClass:
           'swiper-pagination-bullet-active custom-bullet-menu-active',
       }"
+      :autoplay="{
+        delay: 2500,
+        disableOnInteraction: false,
+      }"
     >
       <swiper-slide v-for="img in imgCarrusel" :key="img.name">
         <div class="content-slide">
@@ -33,7 +37,7 @@
 </template>
 
 <script>
-import { Pagination, A11y } from "swiper";
+import { Pagination, A11y, Autoplay } from "swiper";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 // Import Swiper styles
@@ -84,7 +88,7 @@ export default {
   },
   setup() {
     return {
-      modules: [Pagination, A11y],
+      modules: [Pagination, A11y, Autoplay],
     };
   },
 };
