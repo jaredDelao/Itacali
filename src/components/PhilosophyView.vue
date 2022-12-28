@@ -5,10 +5,10 @@
         <h2>Our Seasoning</h2>
         <h4>
           Itacali <br />
-          The flavor of our land. We offer a variety of home cooking, prepared
-          with fresh, natural products and with the seasoning that grandma had;
-          we prepare dishes that recall our roots, that taste of love and
-          nostalgia.
+          Here at Itacali we pride ourselves in offering authentic Mexican
+          cuisine, made with fresh and organic ingredients, just the way grandma
+          used to make it. Embark on a journey filled with flavor & love and be
+          ready to reminisce on your favorite childhood meals.
         </h4>
       </div>
       <img src="../assets/philosophy.png" alt="philosophy" />
