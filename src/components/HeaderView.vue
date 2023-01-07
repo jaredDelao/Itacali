@@ -12,7 +12,7 @@
     />
     <img
       class="background responsive-sm"
-      src="../assets/header/portada_responsive.jpeg"
+      src="../assets/header/portada_responsive.jpg"
       alt="Itacalli fondo"
     />
     <!-- <img class="logo" src="../assets/logo.svg" alt="Itacalli" /> -->
