@@ -74,7 +74,7 @@
       </div>
       <div class="map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12613.402256662435!2d-122.2362288!3d37.7818234!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xce896ead087c5179!2sLe%20Pachion%20-%20International%20Fusion!5e0!3m2!1sen!2smx!4v1672208819315!5m2!1sen!2smx"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.350564165609!2d-122.23622879999998!3d37.7818234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f874680ff2d91%3A0x7119ad86ba91fe31!2sItacali%20-%20Deliciously%20Mexican!5e0!3m2!1sen!2smx!4v1673056387824!5m2!1sen!2smx"
           width="100%"
           height="200"
           style="border: 0"
@@ -100,20 +100,22 @@
         </svg>
       </div>
       <div class="icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="ionicon"
-          viewBox="0 0 512 512"
-          fill="currentColor"
-        >
-          <title>Logo Instagram</title>
-          <path
-            d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
-          />
-          <path
-            d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
-          />
-        </svg>
+        <a href="https://www.instagram.com/itacali.1/" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon"
+            viewBox="0 0 512 512"
+            fill="currentColor"
+          >
+            <title>Logo Instagram</title>
+            <path
+              d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"
+            />
+            <path
+              d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"
+            />
+          </svg>
+        </a>
       </div>
     </div>
     <div class="line"></div>
@@ -127,6 +129,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+a {
+  color: inherit;
+}
 .delivery {
   position: relative;
   width: 95%;
