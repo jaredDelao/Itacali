@@ -1,21 +1,22 @@
 <template>
-  <div class="header">
-    <img
-      class="background no-responsive"
-      src="../assets/soon/1200.png"
-      alt="Itacalli fondo"
-    />
-    <img
-      class="background responsive"
-      src="../assets/soon/768.png"
-      alt="Itacalli fondo"
-    />
-    <img
-      class="background responsive-sm"
-      src="../assets/soon/500.png"
-      alt="Itacalli fondo"
-    />
-    <!-- <img class="logo" src="../assets/logo.svg" alt="Itacalli" /> -->
+  <div class="header-wrapper">
+    <div class="header">
+      <img
+        class="background no-responsive"
+        src="../assets/soon/1200.png"
+        alt="Itacalli fondo"
+      />
+      <img
+        class="background responsive"
+        src="../assets/soon/768.png"
+        alt="Itacalli fondo"
+      />
+      <img
+        class="background responsive-sm"
+        src="../assets/soon/500.png"
+        alt="Itacalli fondo"
+      />
+    </div>
   </div>
 </template>
 
@@ -26,12 +27,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.header-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #e44d55;
+}
 .header {
   position: relative;
+  max-width: 1200px;
   width: 100%;
-  height: 100vh;
-  background-color: #e44d55;
-  //   overflow: hidden;
+  height: auto;
   .no-responsive {
     @media screen and (max-width: 768px) {
       display: none;
@@ -53,19 +60,6 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: contain;
-  }
-  .logo {
-    position: absolute;
-    width: 400px;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    @media screen and (max-width: 900px) {
-      width: 300px;
-    }
-    @media screen and (max-width: 576px) {
-      width: 250px;
-    }
   }
 }
 </style>
