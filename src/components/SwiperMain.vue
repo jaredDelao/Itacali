@@ -48,6 +48,7 @@ import DeliveryView from "./DeliveryView.vue";
 // import "swiper/css/scrollbar";
 
 export default {
+  name: "SwiperMain",
   components: {
     HeaderView,
     PhilosophyView,

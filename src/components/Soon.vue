@@ -2,17 +2,17 @@
   <div class="header">
     <img
       class="background no-responsive"
-      src="../assets/header/portada_1200.png"
+      src="../assets/soon/1200.png"
       alt="Itacalli fondo"
     />
     <img
       class="background responsive"
-      src="../assets/header/portada_768.png"
+      src="../assets/soon/768.png"
       alt="Itacalli fondo"
     />
     <img
       class="background responsive-sm"
-      src="../assets/header/portada_responsive.png"
+      src="../assets/soon/500.png"
       alt="Itacalli fondo"
     />
     <!-- <img class="logo" src="../assets/logo.svg" alt="Itacalli" /> -->
@@ -21,15 +21,17 @@
 
 <script>
 export default {
-  name: "HeaderView",
+  name: "component-soon",
 };
 </script>
+
 <style lang="scss" scoped>
 .header {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  background-color: #e44d55;
+  //   overflow: hidden;
   .no-responsive {
     @media screen and (max-width: 768px) {
       display: none;
@@ -50,7 +52,7 @@ export default {
   .background {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   .logo {
     position: absolute;
